@@ -17,7 +17,10 @@
       alert("Please type a value into 'Email' ")
       return false;
     }
-    alert("Submitted!");
+    if (!email.includes('@')) {
+      alert("Please type a valid e-mail address");
+      return false;
+    }
     return true;
   }
 </script>
